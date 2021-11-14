@@ -9,7 +9,7 @@ public class Main {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://www.google.com/");
-        String searchFiledXpath = "//input";
+        String searchFiledXpath = "//input[@class=\"gLFyf gsfi\"]";
         WebElement searchElement = driver.findElement(By.xpath(searchFiledXpath));
         searchElement.sendKeys("softserve learning and certification");
         searchElement.submit();
